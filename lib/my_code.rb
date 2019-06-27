@@ -15,4 +15,14 @@ def map_to_square (array)
   array.map {|i| **2}
 end
 
+def reduce_to_total(array, starting_number = 0)
+
+       i = 0
+      while i < array.length do      
+        starting_number += array[i]
+        i += 1
+      end
+    starting_number
+end
+
 
